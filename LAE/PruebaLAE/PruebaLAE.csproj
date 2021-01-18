@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{478A4E9E-B38D-456C-B04A-CDDD5087B958}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PruebaLAE</RootNamespace>
+    <AssemblyName>PruebaLAE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Autor.cs" />
+    <Compile Include="Base_de_Datos.cs" />
+    <Compile Include="ConsultarAutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAutores.Designer.cs">
+      <DependentUpon>ConsultarAutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarEditorial.Designer.cs">
+      <DependentUpon>ConsultarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarLibros.Designer.cs">
+      <DependentUpon>ConsultarLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor.cs" />
+    <Compile Include="Editorial.cs" />
+    <Compile Include="EliminarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarAutor.Designer.cs">
+      <DependentUpon>EliminarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarEditorial.Designer.cs">
+      <DependentUpon>EliminarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarLibro.Designer.cs">
+      <DependentUpon>EliminarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarAutor.Designer.cs">
+      <DependentUpon>InsertarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarEditorial.Designer.cs">
+      <DependentUpon>InsertarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarLibro.Designer.cs">
+      <DependentUpon>InsertarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libro.cs" />
+    <Compile Include="ModificarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAutor.Designer.cs">
+      <DependentUpon>ModificarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarEditorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEditorial.Designer.cs">
+      <DependentUpon>ModificarEditorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarLibro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarLibro.Designer.cs">
+      <DependentUpon>ModificarLibro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConsultarAutores.resx">
+      <DependentUpon>ConsultarAutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarEditorial.resx">
+      <DependentUpon>ConsultarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarLibros.resx">
+      <DependentUpon>ConsultarLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAutor.resx">
+      <DependentUpon>EliminarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarEditorial.resx">
+      <DependentUpon>EliminarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarLibro.resx">
+      <DependentUpon>EliminarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarAutor.resx">
+      <DependentUpon>InsertarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarEditorial.resx">
+      <DependentUpon>InsertarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarLibro.resx">
+      <DependentUpon>InsertarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAutor.resx">
+      <DependentUpon>ModificarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEditorial.resx">
+      <DependentUpon>ModificarEditorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarLibro.resx">
+      <DependentUpon>ModificarLibro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
